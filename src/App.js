@@ -1,6 +1,5 @@
 import './App.css';
 
-import { useState,useEffect } from 'react';
 import React from "react";
 import * as yup from 'yup';
 import { Signup } from './Signup';
@@ -52,15 +51,8 @@ export default function App(){
 
 export function Main(){
 
-  const [movies,setMovies] = useState([]);
 
-  // const API_URL = "https://6166c4d713aa1d00170a66f5.mockapi.io"
-  const API_URL = "https://b28-wd-movies2.herokuapp.com"
-  useEffect(()=>{
-    fetch(`${API_URL}/movies`)
-    .then((data)=>data.json())
-    .then((mvs)=>setMovies(mvs))
-  },[]);
+
 
   return  <div>Welcome</div>
 }
